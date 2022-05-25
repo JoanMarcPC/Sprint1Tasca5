@@ -15,9 +15,11 @@ import java.util.Locale;
 
 public class ListarDirectori {
 
+	//Exercici1
 	public static ArrayList<String> ordenarArxius(File directori) {
 		if (directori.isDirectory()) {
 			String arrayArxius[] = directori.list();
+			
 			ArrayList<String> llistaDirectori = new ArrayList<String>(Arrays.asList(arrayArxius));
 
 			Collator primaryCollator = Collator.getInstance(new Locale("es"));
@@ -36,9 +38,9 @@ public class ListarDirectori {
 
 	public static void mostrarPerNomArxiusRecursiu(File directori, String separador) {
 		File[] arxius = directori.listFiles();
-
+        //List<File> arxiusList =  Arrays.asList(arxius);
 		if (arxius != null) {
-			/*
+			/* No soc capaç d'incorporar l'ordenació en Español
 			 * String arxiusOrdenats[] =directori.list(); ArrayList<String> llistaDirectori
 			 * = new ArrayList<String>(Arrays.asList(arxiusOrdenats)); Collator
 			 * primaryCollator = Collator.getInstance(new Locale("es"));
@@ -62,6 +64,7 @@ public class ListarDirectori {
 					mostrarPerNomArxiusRecursiu(arxius[i], nouSeparador);
 
 					/*
+					 * Una altra opcio per format les dates
 					 * String pattern = "yyyy-MM-dd hh:mm aa"; SimpleDateFormat simpleDateFormat =
 					 * new SimpleDateFormat(pattern);
 					 * 
@@ -109,7 +112,8 @@ public class ListarDirectori {
 			System.out.println("Buffer problem (Write)");
 		}
 	}
-
+ 
+	
 	public static void read(String path) {
 		String acumulador = "";
 		BufferedReader bf;

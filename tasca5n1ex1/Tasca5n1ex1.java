@@ -18,6 +18,7 @@ public class Tasca5n1ex1 {
 				"C:\\Users\\formacio\\git\\Itacademy\\Sprint1\\src\\tasca5n1ex1\\DirectoriPare\\llistatArxius.txt");
 
 		File arxiuPare = new File("C:\\Users\\formacio\\git\\Itacademy\\Sprint1\\src\\tasca5n1ex1\\DirectoriPare");
+		//Exercici2 i 3
 		try {
 			// ListarDirectori.mostrarPerNomArxiusRecursiu(arxiuPare,"");
 			ListarDirectori.guardarPerNomArxiusRecursiu(arxiuPare, "\n",
@@ -26,7 +27,7 @@ public class Tasca5n1ex1 {
 			System.out.println(e.getMessage());
 		}
 
-		// Exercici3
+		// Exercici4
 		ListarDirectori.read(
 				"C:\\Users\\formacio\\git\\Itacademy\\Sprint1\\src\\tasca5n1ex1\\DirectoriPare\\llistatArxius.txt");
 		// Exercici 5
